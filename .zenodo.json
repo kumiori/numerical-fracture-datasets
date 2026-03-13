@@ -1,0 +1,32 @@
+{
+  "title": "Numerical Fracture Datasets",
+  "description": "A curated collection of numerical datasets from fracture mechanics experiments, covering multiple approaches, models, and sources. Datasets include results from phase-field fracture models, cohesive zone models, XFEM, and other computational fracture mechanics methods.",
+  "license": "cc-by-4.0",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "keywords": [
+    "fracture mechanics",
+    "phase-field fracture",
+    "computational mechanics",
+    "numerical experiments",
+    "crack propagation",
+    "brittle fracture",
+    "FEniCS",
+    "finite element method"
+  ],
+  "creators": [
+    {
+      "name": "kumiori",
+      "affiliation": ""
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/kumiori/numerical-fracture-datasets",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "language": "eng",
+  "notes": "Data generated via numerical simulations of fracture mechanics. See the repository README and individual dataset READMEs for full provenance, model descriptions, and parameter details."
+}

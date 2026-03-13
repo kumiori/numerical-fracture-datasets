@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use these datasets, please cite them using the metadata below."
+title: "Numerical Fracture Datasets"
+abstract: >
+  A curated collection of numerical datasets from fracture mechanics experiments,
+  covering multiple approaches, models, and sources. Includes results from phase-field
+  fracture models, cohesive zone models, XFEM, and other computational fracture
+  mechanics methods.
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/kumiori/numerical-fracture-datasets"
+keywords:
+  - fracture mechanics
+  - phase-field fracture
+  - computational mechanics
+  - numerical experiments
+  - crack propagation
+  - brittle fracture
+authors:
+  - alias: kumiori
+    website: "https://github.com/kumiori"

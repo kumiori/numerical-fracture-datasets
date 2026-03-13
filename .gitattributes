@@ -1,0 +1,45 @@
+# Git-LFS tracking for scientific data file formats
+
+# HDF5 / NetCDF (common in FEniCS, OpenFOAM, etc.)
+*.h5    filter=lfs diff=lfs merge=lfs -text
+*.hdf5  filter=lfs diff=lfs merge=lfs -text
+*.nc    filter=lfs diff=lfs merge=lfs -text
+*.nc4   filter=lfs diff=lfs merge=lfs -text
+
+# XDMF / VTK (FEniCS, ParaView output)
+*.xdmf  filter=lfs diff=lfs merge=lfs -text
+*.xmf   filter=lfs diff=lfs merge=lfs -text
+*.vtu   filter=lfs diff=lfs merge=lfs -text
+*.vts   filter=lfs diff=lfs merge=lfs -text
+*.vtp   filter=lfs diff=lfs merge=lfs -text
+*.vtk   filter=lfs diff=lfs merge=lfs -text
+*.pvd   filter=lfs diff=lfs merge=lfs -text
+
+# MATLAB / NumPy / SciPy
+*.mat   filter=lfs diff=lfs merge=lfs -text
+*.npy   filter=lfs diff=lfs merge=lfs -text
+*.npz   filter=lfs diff=lfs merge=lfs -text
+
+# Tabular data – only track with LFS when files are large field-output exports.
+# Small parameter tables and metadata CSVs are better committed directly to Git
+# so they remain viewable and diffable on GitHub. Rename or move large tabular
+# exports (e.g. full-field data) into a format such as HDF5 or NumPy instead.
+# Uncomment the lines below if you specifically need LFS for tabular data:
+# *.csv   filter=lfs diff=lfs merge=lfs -text
+# *.tsv   filter=lfs diff=lfs merge=lfs -text
+
+# Compressed archives of data
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.tgz    filter=lfs diff=lfs merge=lfs -text
+*.zip    filter=lfs diff=lfs merge=lfs -text
+
+# Images / visualisations produced by simulations
+*.png   filter=lfs diff=lfs merge=lfs -text
+*.jpg   filter=lfs diff=lfs merge=lfs -text
+*.jpeg  filter=lfs diff=lfs merge=lfs -text
+*.tif   filter=lfs diff=lfs merge=lfs -text
+*.tiff  filter=lfs diff=lfs merge=lfs -text
+*.gif   filter=lfs diff=lfs merge=lfs -text
+
+# PDF figures / reports
+*.pdf   filter=lfs diff=lfs merge=lfs -text
